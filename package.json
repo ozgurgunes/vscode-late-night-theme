@@ -1,0 +1,42 @@
+{
+  "name": "vscode-late-night-theme",
+  "displayName": "Late Night",
+  "description": "A dark theme for VS Code.",
+  "version": "0.0.1",
+  "publisher": "ozgurgunes",
+  "bugs": {
+    "url": "https://github.com/ozgurgunes/vscode-late-night-theme/issues"
+  },
+  "homepage": "https://github.com/ozgurgunes/vscode-late-night-theme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ozgurgunes/vscode-late-night-theme"
+  },
+  "engines": {
+    "vscode": "^1.12.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Late Night",
+        "uiTheme": "vs-dark",
+        "path": "./themes/late-night.json"
+      }
+    ]
+  },
+  "icon": "icon.png",
+  "keywords": [
+    "late night",
+    "night",
+    "dark",
+    "theme",
+    "atom"
+  ],
+  "galleryBanner": {
+    "color": "#222222",
+    "theme": "dark"
+  }
+}
