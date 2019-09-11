@@ -1,7 +1,7 @@
 {
 	"name": "late Night",
 	"colors": {
-    "activityBarBadge.background": "#CC4429",
+		"activityBarBadge.background": "#CC4429",
 		"breadcrumbPicker.background": "#262626",
 		"button.background": "#A07010",
 		"editor.background": "#202020",
@@ -37,7 +37,7 @@
 		"list.activeSelectionBackground": "#A07010",
 		"list.errorForeground": "#DB7C69",
 		"list.focusBackground": "#A07010",
-		"list.highlightForeground": "#A07010",
+		"list.highlightForeground": "#ffffff",
 		"list.hoverBackground": "#50380825",
 		"list.inactiveSelectionBackground": "#A0701020",
 		"list.invalidItemForeground": "#A269DB",
@@ -46,27 +46,26 @@
 		"merge.currentHeaderBackground": "#A0701080",
 		"merge.incomingContentBackground": "#A0701033",
 		"merge.incomingHeaderBackground": "#A0701080",
-    "statusBar.background": "#1C558E",
+		"notificationLink.foreground": "#E6A117",
+		"statusBar.background": "#1C558E"
 	},
 	"tokenColors": [
 		{
 			"scope": [
-				"variable",
 				"meta.definition.variable",
-				"variable.other.readwrite",
-				"variable.other.object",
+				"meta.function-call.arguments",
+				"meta.puctuation",
+				"meta string punctuation",
+				"markup meta punctuation",
+				"punctuation.definition.binding-pattern",
+				"punctuation.definition.inheritance",
+				"punctuation.definition.parameters",
 				"punctuation.separator",
 				"punctuation.terminator",
-				"punctuation.definition.parameters",
-				"punctuation.definition.inheritance",
-				"punctuation.definition.binding-pattern",
-				"meta.function-call.arguments",
 				"source.css support.constant",
-				"source.css constant.other",
-				"source.css keyword.other",
-				"source.css punctuation.section.function",
-				"source.css punctuation.definition.entity",
-				"source.css constant.other.color",
+				"variable",
+				"variable.other.object",
+				"variable.other.readwrite"
 			],
 			"settings": {
 				"foreground": "#E7E7E7"
@@ -74,8 +73,14 @@
 		},
 		{
 			"scope": [
+				"markup.fenced_code punctuation",
 				"meta.brace",
 				"punctuation.definition.block",
+				"source.css constant.other",
+				"source.css keyword.other",
+				"source.css keyword.operator",
+				"source.css punctuation.section",
+				"source.css punctuation.definition.entity"
 			],
 			"settings": {
 				"foreground": "#c3c3c3"
@@ -84,7 +89,7 @@
 		{
 			"scope": [
 				"punctuation.definition.tag.begin",
-				"punctuation.definition.tag.end",
+				"punctuation.definition.tag.end"
 			],
 			"settings": {
 				"foreground": "#ABABAB"
@@ -93,8 +98,10 @@
 		{
 			"scope": [
 				"comment",
-				"string.quoted.docstring",
-				"meta.tag.metadata.doctype"
+				"comment storage",
+				"comment variable",
+				"meta.tag.metadata.doctype",
+				"string.quoted.docstring"
 			],
 			"settings": {
 				"foreground": "#888888"
@@ -102,13 +109,14 @@
 		},
 		{
 			"scope": [
+				"markup.inline.raw",
 				"variable.other.property",
 				"punctuation.accessor",
 				"punctuation.separator.colon",
 				"punctuation.definition.section",
 				"source.json punctuation.support",
 				"source.json punctuation.definition.string",
-				"source.css support.type.vendored",
+				"source.css support.type.vendored"
 			],
 			"settings": {
 				"foreground": "#FAECD0"
@@ -116,21 +124,23 @@
 		},
 		{
 			"scope": [
+				"entity.other.attribute-name.html",
 				"keyword.control",
-				"keyword.operator",
 				"keyword.control.conditional",
-				"variable.parameter",
-				"meta.parameter",
+				"keyword.operator",
 				"meta.class.inheritance",
-				"keyword.control.import",
+				"meta.image string",
+				"meta.link string",
+				"meta.parameter",
 				"keyword.control.export",
 				"keyword.control.from",
-				"entity.other.attribute-name.html",
-				"support.other.match",
-				"text.html string.unquoted",
-				"source.css support.type.property-name",
+				"keyword.control.import",
 				"source.css punctuation.terminator",
+				"source.css support.type.property-name",
+				"support.other.match",
 				"support.type.property-name.json",
+				"text.html string.unquoted",
+				"variable.parameter"
 			],
 			"settings": {
 				"foreground": "#F2D08B"
@@ -138,19 +148,22 @@
 		},
 		{
 			"scope": [
-				"storage",
+				"entity.name.tag.html",
 				"keyword.operator.assignment",
-				"variable.language.special",
+				"markup.inline.raw punctuation",
+				"markup.raw.block",
+				"markup.fenced_code.block",
 				"punctuation.section.function",
 				"punctuation.section.class",
-				"text.html entity.name.tag",
-				"entity.name.tag.html",
+				"source.css meta.selector",
+				"source.css punctuation.definition.constant",
+				"storage",
 				"string.regexp",
+				"text.html entity.name.tag",
+				"text.html entity.tag.tagbraces",
 				"text.html variable.other.object",
 				"text.html variable.other.readwrite",
-				"text.html entity.tag.tagbraces",
-				"source.css meta.selector",
-				"source.css punctuation.definition.constant"
+				"variable.language.special"
 			],
 			"settings": {
 				"foreground": "#E5A194"
@@ -158,22 +171,27 @@
 		},
 		{
 			"scope": [
-				"variable.other.constant",
-				"constant.other",
-				"constant.numeric",
+				"constant",
+				"markup punctuation",
+				"markup.heading.setext",
+				"meta.class",
 				"meta.definition.method",
 				"meta.function",
-				"meta.class",
 				"meta.tag.sgml",
+				"source.css meta.attribute-selector",
+				"source.css keyword.control",
+				"source.vue entity.name.tag",
 				"text.html entity.name.tag.block",
 				"text.html entity.name.tag.structure",
-				"text.html variable.other.object",
-				"text.html variable.other.readwrite",
-				"text.html variable.other.property",
-				"text.html support.variable.property",
 				"text.html meta.object",
-				"source.vue entity.name.tag",
+				"text.html support.variable.property",
+				"text.html variable.other.object",
+				"text.html variable.other.property",
+				"text.html variable.other.readwrite",
 				"text.html keyword.control",
+				"variable.css",
+				"variable.other.less",
+				"variable.scss"
 			],
 			"settings": {
 				"foreground": "#DB7C69"
@@ -181,8 +199,10 @@
 		},
 		{
 			"scope": [
+				"meta.image markup",
 				"string.quoted.double",
 				"string.quoted.single",
+				"source.css variable.parameter"
 			],
 			"settings": {
 				"foreground": "#9DC972"
@@ -190,7 +210,7 @@
 		},
 		{
 			"scope": [
-				"support.type.property-name",
+				"support.type.property-name"
 			],
 			"settings": {
 				"foreground": "#74B336"
@@ -198,8 +218,8 @@
 		},
 		{
 			"scope": [
-				"variable.other.object.property",
 				"punctuation.definition.arguments",
+				"variable.other.object.property"
 			],
 			"settings": {
 				"foreground": "#D4E4F4"
@@ -208,6 +228,7 @@
 		{
 			"scope": [
 				"meta.function-call",
+				"meta.link markup",
 				"source.css support.function"
 			],
 			"settings": {
@@ -216,7 +237,7 @@
 		},
 		{
 			"scope": [
-				"keyword.control.default"
+				"support.variable"
 			],
 			"settings": {
 				"foreground": "#E4D4F4"
@@ -224,12 +245,21 @@
 		},
 		{
 			"scope": [
-				"support.function",
+				"keyword.control.default",
 				"source.css keyword.other.important",
+				"support.function"
 			],
 			"settings": {
 				"foreground": "#BC94E5"
 			}
 		},
+		{
+			"scope": [
+				"source.css string punctuation"
+			],
+			"settings": {
+				"fontStyle":""
+			}
+		}
 	]
 }

@@ -1,0 +1,3 @@
+[submodule "samples"]
+	path = samples
+	url = git@github.com:uloco/syntax-highlighting-samples.git
