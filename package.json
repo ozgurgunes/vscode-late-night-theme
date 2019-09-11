@@ -2,7 +2,7 @@
 	"name": "vscode-late-night-theme",
 	"displayName": "Late Night",
 	"description": "A dark theme for VS Code.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"publisher": "ozgurgunes",
 	"bugs": {
 		"url": "https://github.com/ozgurgunes/vscode-late-night-theme/issues"
