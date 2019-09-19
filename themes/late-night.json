@@ -119,7 +119,7 @@
 		"gitDecoration.ignoredResourceForeground": "#888888",
 		"gitDecoration.modifiedResourceForeground": "#F9E3AB",
 		"gitDecoration.submoduleResourceForeground": "#A6C7F1",
-		"gitDecoration.untrackedResourceForeground": "#888888",
+		"gitDecoration.untrackedResourceForeground": "#F5CB63",
 		"imagePreview.border": "#80808059",
 		"input.background": "#3c3c3c",
 		"input.foreground": "#cccccc",
@@ -270,18 +270,15 @@
 	},
 	"tokenColors": [
 		{
+			"name": "default-1",
 			"scope": [
+				"keyword.operator.combinator.css",
+				"meta.brace",
 				"meta.definition.variable",
 				"meta.function-call.arguments",
-				"meta.puctuation",
-				"meta string punctuation",
-				"markup meta punctuation",
-				"punctuation.definition.binding-pattern",
-				"punctuation.definition.inheritance",
-				"punctuation.definition.parameters",
-				"punctuation.separator",
-				"punctuation.terminator",
-				"source.css support.constant",
+				"meta.function.parameters keyword.operator.unpacking",
+				"punctuation",
+				"source.css keyword.other.unit",
 				"variable",
 				"variable.other.object",
 				"variable.other.readwrite"
@@ -291,21 +288,16 @@
 			}
 		},
 		{
+			"name": "default-2",
 			"scope": [
-				"markup.fenced_code punctuation",
-				"meta.brace",
-				"punctuation.definition.block",
-				"source.css constant.other",
-				"source.css keyword.other",
-				"source.css keyword.operator",
-				"source.css punctuation.section",
-				"source.css punctuation.definition.entity"
+				"meta.tag.sgml.doctype"
 			],
 			"settings": {
 				"foreground": "#c3c3c3"
 			}
 		},
 		{
+			"name": "default-3",
 			"scope": [
 				"punctuation.definition.tag.begin",
 				"punctuation.definition.tag.end"
@@ -315,45 +307,41 @@
 			}
 		},
 		{
+			"name": "default-4",
 			"scope": [
 				"comment",
 				"comment storage",
 				"comment variable",
 				"meta.tag.metadata.doctype",
-				"string.quoted.docstring"
+				"punctuation.definition.comment",
+				"string.quoted.docstring",
+				"string.quoted.docstring punctuation.definition"
 			],
 			"settings": {
 				"foreground": "#888888"
 			}
 		},
 		{
+			"name": "yellow-1",
 			"scope": [
-				"markup.inline.raw",
-				"variable.other.property",
-				"punctuation.accessor",
-				"punctuation.separator.colon",
-				"punctuation.definition.section",
-				"source.json punctuation.support",
-				"source.json punctuation.definition.string",
-				"source.css support.type.vendored"
+				"source.css support.type.vendored",
+				"text.html entity.other.attribute-name",
+				"variable.other.property"
 			],
 			"settings": {
 				"foreground": "#FAECD0"
 			}
 		},
 		{
+			"name": "yellow-2",
 			"scope": [
-				"entity.other.attribute-name.html",
 				"keyword.control",
-				"keyword.control.conditional",
 				"keyword.operator",
 				"meta.class.inheritance",
+				"meta.directive entity.other.attribute-name",
 				"meta.image string",
 				"meta.link string",
 				"meta.parameter",
-				"keyword.control.export",
-				"keyword.control.from",
-				"keyword.control.import",
 				"source.css punctuation.terminator",
 				"source.css support.type.property-name",
 				"support.other.match",
@@ -366,50 +354,51 @@
 			}
 		},
 		{
+			"name": "red-1",
 			"scope": [
-				"entity.name.tag.html",
-				"keyword.operator.assignment",
-				"markup.inline.raw punctuation",
-				"markup.raw.block",
+				"entity.name.tag.template",
 				"markup.fenced_code.block",
-				"punctuation.section.function",
-				"punctuation.section.class",
-				"source.css meta.selector",
+				"markup.inline.raw",
+				"markup.raw.block",
+				"markup punctuation",
+				"punctuation.definition.decorator",
 				"source.css punctuation.definition.constant",
-				"source.css entity.other.attribute-name",
-				"entity.name.tag",
 				"storage",
 				"string.regexp",
+				"source.css constant.other",
+				"source.css meta.attribute-selector",
+				"source.css punctuation.definition.entity.css",
+				"source.css punctuation.definition.keyword",
+				"source.css punctuation.definition.variable",
 				"text.html entity.name.tag",
 				"text.html entity.tag.tagbraces",
 				"text.html variable.other.object",
-				"text.html variable.other.readwrite",
-				"variable.language.special"
+				"text.html variable.other.readwrite"
 			],
 			"settings": {
 				"foreground": "#F1B6B6"
 			}
 		},
 		{
+			"name": "red-2",
 			"scope": [
 				"constant",
-				"markup punctuation",
 				"markup.heading.setext",
 				"meta.class",
 				"meta.definition.method",
 				"meta.function",
 				"meta.tag.sgml",
-				"source.css meta.attribute-selector",
-				"source.css keyword.control",
-				"source.vue entity.name.tag",
-				"text.html entity.name.tag.block",
-				"text.html entity.name.tag.structure",
+				"source.css entity.name.tag",
+				"source.css entity.other.attribute-name.class",
+				"source.css entity.other.attribute-name.pseudo-element",
+				"source.css keyword.other.important",
+				"source.css meta.selector",
+				"text.html keyword.control",
 				"text.html meta.object",
 				"text.html support.variable.property",
 				"text.html variable.other.object",
 				"text.html variable.other.property",
 				"text.html variable.other.readwrite",
-				"text.html keyword.control",
 				"variable.css",
 				"variable.other.less",
 				"variable.scss"
@@ -419,6 +408,7 @@
 			}
 		},
 		{
+			"name": "green-1",
 			"scope": [
 				"meta.image markup",
 				"string.quoted.double",
@@ -437,27 +427,10 @@
 			}
 		},
 		{
-			"scope": [
-				"support.type.property-name"
-			],
-			"settings": {
-				"foreground": "#74B336"
-			}
-		},
-		{
-			"scope": [
-				"punctuation.definition.arguments",
-				"variable.other.object.property"
-			],
-			"settings": {
-				"foreground": "#D4E4F4"
-			}
-		},
-		{
+			"name": "blue-1",
 			"scope": [
 				"meta.function-call",
-				"support.function",
-				"support.variable"
+				"meta.link"
 			],
 			"settings": {
 				"foreground": "#A6C7F1"
@@ -465,7 +438,8 @@
 		},
 		{
 			"name": "blue-2",
-			"scope": [],
+			"scope": [
+			],
 			"settings": {
 				"foreground": "#5997E5"
 			}
@@ -473,15 +447,19 @@
 		{
 			"name": "magenta-1",
 			"scope": [
-				"keyword.control.default"
+				"keyword.control.default",
+				"source.css keyword.control.at-rule punctuation.definition.keyword",
+				"support.variable"
 			],
 			"settings": {
 				"foreground": "#F1B6E9"
 			}
 		},
 		{
+			"name": "magenta-2",
 			"scope": [
-				"support.variable"
+				"source.css keyword.control",
+				"support.function"
 			],
 			"settings": {
 				"foreground": "#E578D5"
@@ -489,7 +467,10 @@
 		},
 		{
 			"name": "cyan-1",
-			"scope": [],
+			"scope": [
+				"variable.language.special",
+				"variable.language.this"
+			],
 			"settings": {
 				"foreground": "#B6E9F1"
 			}
@@ -497,9 +478,7 @@
 		{
 			"name": "cyan-2",
 			"scope": [
-				"keyword.control.default",
-				"source.css keyword.other.important",
-				"support.function"
+				"support.class"
 			],
 			"settings": {
 				"foreground": "#78D5E5"
@@ -507,10 +486,12 @@
 		},
 		{
 			"scope": [
-				"source.css string punctuation"
+				"comment",
+				"entity.other.inherited-class",
+				"string.quoted.docstring"
 			],
 			"settings": {
-				"fontStyle":""
+				"fontStyle": "italic"
 			}
 		}
 	]

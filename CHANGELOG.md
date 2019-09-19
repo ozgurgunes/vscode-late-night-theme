@@ -2,6 +2,10 @@
 
 Theme is being improved and fixed frequently. Here is the list of what have been done:
 
+## Version 0.1.3 (9.20.2019)
+
+* Fixed several issues.
+
 ## Version 0.1.2 (9.19.2019)
 
 * Workbench colors improved.
