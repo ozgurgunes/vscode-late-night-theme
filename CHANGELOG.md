@@ -3,6 +3,12 @@ Changelog
 
 Theme is being improved and fixed frequently. Here is the list of what have been done:
 
+Version 0.2.1 (9.24.2019)
+----------------------------
+
+* Darken status bar.
+* Fixed function highlighing.
+
 Version 0.2.0 (9.21.2019)
 ----------------------------
 
