@@ -3,6 +3,13 @@ Changelog
 
 Theme is being improved and fixed frequently. Here is the list of what have been done:
 
+Version 0.2.2
+----------------------------
+
+* Brighter terminal colors
+* toml file highlighting
+* ini file highlighting
+
 Version 0.2.1 (9.24.2019)
 ----------------------------
 

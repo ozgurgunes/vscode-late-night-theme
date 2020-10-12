@@ -234,22 +234,22 @@
 		"tab.unfocusedActiveModifiedBorder": "#F5CB6380",
 		"tab.unfocusedInactiveForeground": "#ffffff40",
 		"tab.unfocusedInactiveModifiedBorder": "#F5CB6340",
-		"terminal.ansiBlack": "#000000",
-		"terminal.ansiBlue": "#0060D8",
-		"terminal.ansiBrightBlack": "#666666",
-		"terminal.ansiBrightBlue": "#5997E5",
-		"terminal.ansiBrightCyan": "#78D5E5",
-		"terminal.ansiBrightGreen": "#78D578",
-		"terminal.ansiBrightMagenta": "#E578D5",
-		"terminal.ansiBrightRed": "#E57878",
-		"terminal.ansiBrightWhite": "#e5e5e5",
-		"terminal.ansiBrightYellow": "#F5CB63",
-		"terminal.ansiCyan": "#30C0D8",
-		"terminal.ansiGreen": "#30C030",
-		"terminal.ansiMagenta": "#D830C0",
-		"terminal.ansiRed": "#D83030",
-		"terminal.ansiWhite": "#e5e5e5",
-		"terminal.ansiYellow": "#F0B010",
+		"terminal.ansiBlack": "#141414",
+		"terminal.ansiBlue": "#5997E5",
+		"terminal.ansiBrightBlack": "#222222",
+		"terminal.ansiBrightBlue": "#A6C7F1",
+		"terminal.ansiBrightCyan": "#B6E9F1",
+		"terminal.ansiBrightGreen": "#B6E9B6",
+		"terminal.ansiBrightMagenta": "#F1B6E9",
+		"terminal.ansiBrightRed": "#F1B6B6",
+		"terminal.ansiBrightWhite": "#F8F8F8",
+		"terminal.ansiBrightYellow": "#F9E3AB",
+		"terminal.ansiCyan": "#78D5E5",
+		"terminal.ansiGreen": "#78D578",
+		"terminal.ansiMagenta": "#E578D5",
+		"terminal.ansiRed": "#E57878",
+		"terminal.ansiWhite": "#EDEDED",
+		"terminal.ansiYellow": "#F5CB63",
 		"terminal.background": "#1e1e1e",
 		"terminal.border": "#80808059",
 		"terminal.foreground": "#cccccc",
@@ -278,11 +278,10 @@
 				"meta.definition.variable",
 				"meta.function-call.arguments",
 				"meta.function.parameters keyword.operator.unpacking",
+				"meta.object-literal.key",
 				"punctuation",
 				"source.css keyword.other.unit",
-				"variable",
-				"variable.other.object",
-				"variable.other.readwrite"
+				"variable"
 			],
 			"settings": {
 				"foreground": "#EDEDED"
@@ -325,6 +324,8 @@
 		{
 			"name": "yellow-1",
 			"scope": [
+				"keyword.key.toml",
+				"keyword.other.definition.ini",
 				"meta.parameter",
 				"meta.tag.attributes.js.jsx",
 				"punctuation.separator.key-value",
@@ -348,6 +349,7 @@
 				"meta.link string",
 				"source.css punctuation.terminator",
 				"source.css support.type.property-name",
+				"constant.character.format.placeholder",
 				"support.other.match",
 				"text.html string.unquoted"
 			],
@@ -365,6 +367,7 @@
 				"markup.raw.block",
 				"markup punctuation",
 				"punctuation.definition.decorator",
+				"punctuation.separator.key-value.ini",
 				"source.css punctuation.definition.constant",
 				"storage",
 				"string.regexp",
@@ -373,8 +376,7 @@
 				"source.css punctuation.definition.entity.css",
 				"source.css punctuation.definition.keyword",
 				"source.css punctuation.definition.variable",
-				"source.css variable",
-				"text.html variable.other.object"
+				"source.css variable"
 			],
 			"settings": {
 				"foreground": "#F1B6B6"
@@ -397,11 +399,8 @@
 				"source.css entity.other.attribute-name.pseudo-element",
 				"source.css keyword.other.important",
 				"source.css meta.selector",
-				"text.html keyword.control",
-				"text.html meta.object",
-				"text.html support.variable.property",
-				"text.html variable.other.property",
-				"text.html variable.other.readwrite"
+				"source.ini entity.name.section",
+				"source.toml entity.other.attribute-name.table"
 			],
 			"settings": {
 				"foreground": "#E57878"
@@ -412,8 +411,7 @@
 			"scope": [
 				"punctuation.definition.string",
 				"meta.image markup",
-				"source.css variable.parameter",
-				"text.html string.quoted.single"
+				"source.css variable.parameter"
 			],
 			"settings": {
 				"foreground": "#B6E9B6"
